@@ -1,9 +1,9 @@
 # foodie-pal-culinary-companion
  FoodiePal - Culinary Companion Mid-Term Project | Mobile Device Programming (MDP)
 
- ### App Execution Flow: 
+ ### App Execution Flow Demo Video: https://drive.google.com/file/d/1EAC4c8NpzyWEyudfYSuU3sldCbswkw52/view?usp=sharing
 
-**Note: All steps are done according to the assignment. Extra Credit work is also done. Detailed execution flow with all features can be found in the video. The main screenshots are attached below:**
+**Note: All steps are done according to the assignment. Extra Credit work is also done. Detailed execution flow with all features can be found in the [video](https://drive.google.com/file/d/1EAC4c8NpzyWEyudfYSuU3sldCbswkw52/view?usp=sharing). The main screenshots are attached below:**
 
 ### 1. User Authen1ca1on with Shared Preferences:
 ![WhatsApp Image 2023-12-17 at 6 25 34 AM](https://github.com/BhagiaSheri/foodie-pal-culinary-companion/assets/38161609/4126c1fd-b688-4bfa-a37a-c20957d5e4b5)
@@ -21,7 +21,7 @@
 
 **Here validation for wrong username and password is done along with required fields but with the password entered screenshot is prohibited in settings**
 
-### 2. Tab Layout with five Fragments: Recipes, Meal Planner, Blog, Contact, About Me AND Recipes Fragment with Dynamic RecyclerView::
+### 2. Tab Layout with five Fragments: Recipes, Meal Planner, Blog, Contact, About Me, AND Recipes Fragment with Dynamic RecyclerView::
 ![WhatsApp Image 2023-12-17 at 6 25 35 AM (2)](https://github.com/BhagiaSheri/foodie-pal-culinary-companion/assets/38161609/18479fac-3bb5-4bc3-b209-787158df603b)
 
 **After successful login user can see all fragments in Tab Layout with ViewPager2 and Bottom Navigations**
@@ -67,7 +67,7 @@
 5. ### Contact Fragment:
 ![WhatsApp Image 2023-12-17 at 6 25 37 AM (1)](https://github.com/BhagiaSheri/foodie-pal-culinary-companion/assets/38161609/d296d873-94f9-4787-8070-e25a69ea835d)
 
-**These icons for contact has animation as well shown in the video - (Extra Credit Part)**
+**These icons for contact has animation as well shown in the [video](https://drive.google.com/file/d/1EAC4c8NpzyWEyudfYSuU3sldCbswkw52/view?usp=sharing) - (Extra Credit Part)**
 
 #### On Click Call Button:
 ![WhatsApp Image 2023-12-17 at 6 29 46 AM](https://github.com/BhagiaSheri/foodie-pal-culinary-companion/assets/38161609/6375e8ab-6365-45d9-8de8-c79745aefe70)
