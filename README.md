@@ -1,7 +1,8 @@
 # foodie-pal-culinary-companion
- FoodiePal - Culinary Companion Mid-Term Project | Mobile Device Programming (MDP)
+ FoodiePal - Culinary Companion | Mid-Term Project | Mobile Device Programming (MDP)
 
- ### App Execution Flow Demo Video: https://drive.google.com/file/d/1EAC4c8NpzyWEyudfYSuU3sldCbswkw52/view?usp=sharing
+ ### App Execution Flow [Demo Video](https://drive.google.com/file/d/1EAC4c8NpzyWEyudfYSuU3sldCbswkw52/view?usp=sharing): 
+ https://drive.google.com/file/d/1EAC4c8NpzyWEyudfYSuU3sldCbswkw52/view?usp=sharing
 
 **Note: All steps are done according to the assignment. Extra Credit work is also done. Detailed execution flow with all features can be found in the [video](https://drive.google.com/file/d/1EAC4c8NpzyWEyudfYSuU3sldCbswkw52/view?usp=sharing). The main screenshots are attached below:**
 
