@@ -23,6 +23,7 @@ class ViewPagerAdapter(
             1 -> MealPlanFragment()
             2-> BlogFragment()
             3 -> ContactFragment()
+            4 -> AboutMeFragment()
             else -> Fragment()
         }
     }

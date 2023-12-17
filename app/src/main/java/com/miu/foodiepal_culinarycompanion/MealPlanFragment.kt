@@ -24,7 +24,6 @@ class MealPlanFragment : Fragment(), MealPlanInputDialog.OnMealPlanInputListener
     private lateinit var recyclerView: RecyclerView
     private lateinit var fabAddMealPlan: FloatingActionButton
     private lateinit var mealPlanAdapter: MyMealPlanRecyclerViewAdapter
-
     private val mealPlans = mutableListOf<MealPlan>()
 
     override fun onCreateView(

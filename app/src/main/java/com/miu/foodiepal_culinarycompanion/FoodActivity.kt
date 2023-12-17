@@ -23,7 +23,8 @@ class FoodActivity : AppCompatActivity() {
             RecipeFragment(),
             MealPlanFragment(),
             BlogFragment(),
-            ContactFragment()
+            ContactFragment(),
+            AboutMeFragment()
         )
 
         val viewPagerAdapter = ViewPagerAdapter(
@@ -36,12 +37,13 @@ class FoodActivity : AppCompatActivity() {
         //Write the necessary code
         tabLayout.tabGravity = TabLayout.GRAVITY_FILL
 
-        TabLayoutMediator(tabLayout, viewPager){tab, position ->
-            when(position){
+        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
+            when (position) {
                 0 -> tab.text = "Recipes"
                 1 -> tab.text = "Meal Planner"
                 2 -> tab.text = "Blog"
                 3 -> tab.text = "Contact"
+                4 -> tab.text = "About Me"
             }
         }.attach()
     }

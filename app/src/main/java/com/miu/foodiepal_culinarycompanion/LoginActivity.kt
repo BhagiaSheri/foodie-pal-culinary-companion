@@ -21,15 +21,6 @@ class LoginActivity : AppCompatActivity() {
         // Initialize SharedPreferences
         sharedPreferences = getSharedPreferences("user_credentials", Context.MODE_PRIVATE)
 
-        // Fetch stored credentials //TODO Remove Temp
-        val savedUsername = sharedPreferences.getString("username", "")
-        val savedPassword = sharedPreferences.getString("password", "")
-
-        if(savedUsername?.isNotEmpty() == true && savedPassword?.isNotEmpty() == true){
-            navigateToFoodActivity()
-        }
-
-
         loginBinding.loginButton.setOnClickListener {
             loginUser()
         }
@@ -49,9 +40,6 @@ class LoginActivity : AppCompatActivity() {
         // Fetch stored credentials
         val savedUsername = sharedPreferences.getString("username", "")
         val savedPassword = sharedPreferences.getString("password", "")
-
-        println("Uname: $savedUsername")
-        println("Pass: $savedPassword")
 
         // Check if entered credentials match stored credentials
         if (username == savedUsername && password == savedPassword) {

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><!-- res/layout/about_me_fragment.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user_img" />
+
+    <TextView
+        android:id="@+id/fullNameTextView"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImageView"
+        android:textColor="#FFE85D22"
+        android:textStyle="italic"
+        android:textAppearance="@style/ShapeAppearance.Material3.Corner.Large"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="8dp"
+        android:text="Bhagia Sheri"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/headingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullNameTextView"
+        android:background="#131315"
+        android:textColor="#FFE85D22"
+        android:textAppearance="@style/ShapeAppearance.Material3.Corner.ExtraLarge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="Personal Fun Facts:"
+        android:textSize="18sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/detailsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headingTextView"
+        android:layout_marginTop="16dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add" />
+
+</RelativeLayout>
