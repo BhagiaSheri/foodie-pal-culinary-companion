@@ -1,7 +1,7 @@
 package com.miu.foodiepal_culinarycompanion
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
@@ -34,7 +34,6 @@ class FoodActivity : AppCompatActivity() {
         )
         viewPager.adapter = viewPagerAdapter
 
-        //Write the necessary code
         tabLayout.tabGravity = TabLayout.GRAVITY_FILL
 
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
@@ -46,5 +45,30 @@ class FoodActivity : AppCompatActivity() {
                 4 -> tab.text = "About Me"
             }
         }.attach()
+
+        setupBottomNavigationView(viewPager);
+    }
+
+    private fun setupBottomNavigationView(viewPager: ViewPager2) {
+        binding.bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.menu_item1 -> {
+                    viewPager.currentItem = 0
+                    true
+                }
+
+                R.id.menu_item2 -> {
+                    viewPager.currentItem = 1
+                    true
+                }
+
+                R.id.menu_item3 -> {
+                    viewPager.currentItem = 2
+                    true
+                }
+
+                else -> false
+            }
+        }
     }
 }
