@@ -3,7 +3,7 @@
 
  ### App Execution Flow: 
 
-** Note: All steps are done according to the assignment. Extra Credit work is also done. Detailed execution flow with all features can be found in the video. The main screenshots are attached below:**
+**Note: All steps are done according to the assignment. Extra Credit work is also done. Detailed execution flow with all features can be found in the video. The main screenshots are attached below:**
 
 ### 1. User Authen1ca1on with Shared Preferences:
 ![WhatsApp Image 2023-12-17 at 6 25 34 AM](https://github.com/BhagiaSheri/foodie-pal-culinary-companion/assets/38161609/4126c1fd-b688-4bfa-a37a-c20957d5e4b5)
