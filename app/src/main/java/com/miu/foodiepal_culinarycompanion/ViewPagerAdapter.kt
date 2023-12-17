@@ -21,6 +21,8 @@ class ViewPagerAdapter(
         return when (position) {
             0 -> RecipeFragment()
             1 -> MealPlanFragment()
+            2-> BlogFragment()
+            3 -> ContactFragment()
             else -> Fragment()
         }
     }

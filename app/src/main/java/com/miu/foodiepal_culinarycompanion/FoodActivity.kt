@@ -21,7 +21,9 @@ class FoodActivity : AppCompatActivity() {
         val tabLayout: TabLayout = binding.tabLayout
         val fragments: List<Fragment> = listOf(
             RecipeFragment(),
-            MealPlanFragment()
+            MealPlanFragment(),
+            BlogFragment(),
+            ContactFragment()
         )
 
         val viewPagerAdapter = ViewPagerAdapter(
@@ -38,6 +40,8 @@ class FoodActivity : AppCompatActivity() {
             when(position){
                 0 -> tab.text = "Recipes"
                 1 -> tab.text = "Meal Planner"
+                2 -> tab.text = "Blog"
+                3 -> tab.text = "Contact"
             }
         }.attach()
     }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextBlogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title" />
+
+    <EditText
+        android:id="@+id/editTextBlogDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start Writing Blog Content"
+        android:inputType="textMultiLine"
+        android:lines="10" />
+
+    <Button
+        android:id="@+id/buttonAddBlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Blog" />
+</LinearLayout>
