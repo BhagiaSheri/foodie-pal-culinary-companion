@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/item_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:background="#131315"
+        android:padding="10dp"
+        android:text="Monday"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="#FFE85D22"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:padding="10dp"
+        android:text="Meal Plan for Day"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textStyle="italic" />
+
+</LinearLayout>

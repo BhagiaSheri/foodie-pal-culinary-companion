@@ -20,7 +20,8 @@ class FoodActivity : AppCompatActivity() {
         val viewPager: ViewPager2 = binding.viewPager
         val tabLayout: TabLayout = binding.tabLayout
         val fragments: List<Fragment> = listOf(
-            RecipeFragment()
+            RecipeFragment(),
+            MealPlanFragment()
         )
 
         val viewPagerAdapter = ViewPagerAdapter(
@@ -36,10 +37,8 @@ class FoodActivity : AppCompatActivity() {
         TabLayoutMediator(tabLayout, viewPager){tab, position ->
             when(position){
                 0 -> tab.text = "Recipes"
-//                1 -> tab.text = "Soil"
+                1 -> tab.text = "Meal Planner"
             }
         }.attach()
-
-
     }
 }

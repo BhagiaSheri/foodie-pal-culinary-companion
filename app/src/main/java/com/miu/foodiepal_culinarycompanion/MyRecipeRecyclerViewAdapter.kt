@@ -7,9 +7,6 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 
-import com.miu.foodiepal_culinarycompanion.placeholder.PlaceholderContent.PlaceholderItem
-import com.miu.foodiepal_culinarycompanion.databinding.FragmentRecipeBinding
-
 class MyRecipeRecyclerViewAdapter(
     private val recipeList: List<Recipe>
 ) : RecyclerView.Adapter<MyRecipeRecyclerViewAdapter.RecipeViewHolder>() {

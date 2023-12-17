@@ -46,7 +46,6 @@ dependencies {
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("de.hdodenhof:circleimageview:3.1.0")
-    implementation("com.prolificinteractive:material-calendarview:2.0.1")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")

@@ -1,17 +1,13 @@
 package com.miu.foodiepal_culinarycompanion
 
-import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.miu.foodiepal_culinarycompanion.placeholder.PlaceholderContent
 
 /**
  * A fragment representing a list of Items.
@@ -53,16 +49,13 @@ class RecipeFragment : Fragment(), RecipeInputDialog.OnRecipeInputListener {
 
         // Set up FloatingActionButton click listener
         fabAddRecipe.setOnClickListener {
-            // Handle adding a new recipe (you can show a dialog, navigate to a new activity, etc.)
-            // For simplicity, let's just add a dummy recipe for demonstration purposes
-            addDummyRecipe()
+            addNewRecipe()
         }
 
         return view
     }
 
-    // Function to add a dummy recipe
-    private fun addDummyRecipe() {
+    private fun addNewRecipe() {
         // Show the recipe input dialog
         val recipeInputDialog = RecipeInputDialog(requireContext(), this)
         recipeInputDialog.show()

@@ -18,8 +18,11 @@ class ViewPagerAdapter(
 
     override fun createFragment(position: Int): Fragment {
         //Write the necessary code
-       return RecipeFragment()
-
+        return when (position) {
+            0 -> RecipeFragment()
+            1 -> MealPlanFragment()
+            else -> Fragment()
+        }
     }
 
 }
