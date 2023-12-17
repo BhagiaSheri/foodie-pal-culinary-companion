@@ -21,6 +21,14 @@ class LoginActivity : AppCompatActivity() {
         // Initialize SharedPreferences
         sharedPreferences = getSharedPreferences("user_credentials", Context.MODE_PRIVATE)
 
+        // Fetch stored credentials //TODO Remove Temp
+        val savedUsername = sharedPreferences.getString("username", "")
+        val savedPassword = sharedPreferences.getString("password", "")
+
+        if(savedUsername?.isNotEmpty() == true && savedPassword?.isNotEmpty() == true){
+            navigateToFoodActivity()
+        }
+
 
         loginBinding.loginButton.setOnClickListener {
             loginUser()
@@ -48,14 +56,14 @@ class LoginActivity : AppCompatActivity() {
         // Check if entered credentials match stored credentials
         if (username == savedUsername && password == savedPassword) {
             // Authentication successful
-            navigateToLoginActivity()
+            navigateToFoodActivity()
         } else {
             // Authentication failed
             showToast("Invalid Username or Password.")
         }
     }
 
-    private fun navigateToLoginActivity() {
+    private fun navigateToFoodActivity() {
         // Intent to start the result activity
         val intent = Intent(this, FoodActivity::class.java)
         startActivity(intent)

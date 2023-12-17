@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description / Instructions"
+        android:inputType="textMultiLine"
+        android:lines="3" />
+
+    <EditText
+        android:id="@+id/editTextCookingTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cooking Time" />
+
+    <EditText
+        android:id="@+id/editTextRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Recipe Rating" />
+
+    <Button
+        android:id="@+id/buttonAddRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Recipe" />
+</LinearLayout>

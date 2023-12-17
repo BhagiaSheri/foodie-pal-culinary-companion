@@ -2,6 +2,7 @@ package com.miu.foodiepal_culinarycompanion
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -15,7 +16,7 @@ import com.miu.foodiepal_culinarycompanion.placeholder.PlaceholderContent
 /**
  * A fragment representing a list of Items.
  */
-class RecipeFragment : Fragment() {
+class RecipeFragment : Fragment(), RecipeInputDialog.OnRecipeInputListener {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var fabAddRecipe: FloatingActionButton
@@ -31,6 +32,19 @@ class RecipeFragment : Fragment() {
 
         recyclerView = view.findViewById(R.id.recyclerViewRecipes)
         fabAddRecipe = view.findViewById(R.id.fabAddRecipe)
+
+        recipeList.add(
+            0, Recipe(
+                "French Egg Toast",
+                """|Add 2 Eggs,
+                    |1 Tbl Spoon Black Pepper,
+                    |Salt, Red Chilli...
+                    """.trimMargin(),
+                R.drawable.french_toast_pic,
+                "20 Minutes",
+                "4.0 Rating"
+            )
+        )
 
         // Set up RecyclerView
         recipeAdapter = MyRecipeRecyclerViewAdapter(recipeList)
@@ -49,15 +63,25 @@ class RecipeFragment : Fragment() {
 
     // Function to add a dummy recipe
     private fun addDummyRecipe() {
-        val dummyRecipe = Recipe(
-            "New Recipe",
-            "Description for the new recipe",
-            R.drawable.ic_launcher_foreground, // Replace with the actual image resource
-            "30 minutes",
-            4.5
-        )
-        recipeList.add(dummyRecipe)
+        // Show the recipe input dialog
+        val recipeInputDialog = RecipeInputDialog(requireContext(), this)
+        recipeInputDialog.show()
+    }
+
+    override fun onRecipeInput(
+        title: String,
+        description: String,
+        cookingTime: String,
+        rating: String
+    ) {
+        // Handle adding the new recipe to the list
+        val images: List<Int> = listOf(R.drawable.biryani, R.drawable.recipe_pic, R.drawable.donut)
+
+        val newRecipe =
+            Recipe(title, description, images[(images.indices).random()], cookingTime, rating)
+        recipeList.add(newRecipe)
         recipeAdapter.notifyDataSetChanged()
+
     }
 
 }

@@ -9,8 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_launcher_foreground"
-    />
+        android:src="@drawable/ic_launcher_foreground" />
 
     <TextView
         android:id="@+id/textViewTitle"
@@ -18,20 +17,36 @@
         android:layout_height="wrap_content"
         android:padding="8dp"
         android:text="Recipe Title"
-        android:textAppearance="@style/ShapeAppearance.Material3.Corner.Large"
+        android:textAppearance="@style/ShapeAppearance.Material3.Corner.ExtraLarge"
         android:textSize="18sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Recipe Description / Instructions:"
+        android:textStyle="bold"
+        />
 
     <TextView
         android:id="@+id/textViewDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="Recipe Description" />
+        android:hint="Recipe Description / Instructions"
+        android:inputType="textMultiLine"
+        android:background="@drawable/border"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="10dp"
+        android:lines="3"
+        android:padding="8dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#131315"
+        android:backgroundTint="#131315"
         android:orientation="horizontal">
 
         <TextView
@@ -40,7 +55,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="8dp"
-            android:text="30 min" />
+            android:text="30 min"
+            android:textColor="#FFE85D22"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewRating"
@@ -48,6 +66,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:padding="8dp"
-            android:text="4.5" />
+            android:text="4.5"
+            android:textColor="#FFE85D22"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>

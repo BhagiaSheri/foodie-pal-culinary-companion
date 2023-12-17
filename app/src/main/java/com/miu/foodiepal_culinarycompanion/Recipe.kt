@@ -5,5 +5,5 @@ data class Recipe(
     val description: String,
     val imageResource: Int,
     val cookingTime: String,
-    val rating: Double
+    val rating: String
 )
